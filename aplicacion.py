@@ -72,7 +72,6 @@ def libros():
        titulo = "xxx"    
     if not autor:
        autor = "xxx"
-  
 
     libros = db.execute("SELECT * FROM libros WHERE isbn LIKE ('%" + codigo + "%') OR titulo LIKE ('%" + titulo + "%') OR autor LIKE ('%" + autor + "%')").fetchall()
     
@@ -90,7 +89,6 @@ def libro(libro_id):
 
    #accesa API de Goodreads
     import requests
-    base = "isbn"
     res=requests.get("https://www.goodreads.com/book/review_counts.json",params={"key":"uYFyo76mrXdoDZ658eU1Q","isbns":"0812995341"})
 
 
