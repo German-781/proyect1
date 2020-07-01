@@ -1,8 +1,7 @@
 # Project 1
 Mi proyecto está compuesto por un modelo de datos, dos aplicativos Python y un directorio de templates con nueve páginas html
  El objetivo del proyecto es cargar una base de datos con libros, definir las tablas requeridas en una base de datos en Heroku
-y construir un aplicativo para mostrar libros seleccionados y calificar libros. Tambien se pedía mostrar información de libros
-desde una API de Goodread; pero esto último no fue posible 
+y construir un aplicativo para mostrar libros seleccionados y calificar libros. Tambien se pedía mostrar información de libros desde una API de Goodread; pero esto último no fue posible. 
 
 El modelo del proyecto es models.py
 El aplicativo de carga de libros es import.py. Para efectos de la prueba sólo se cargaron 35 libros
