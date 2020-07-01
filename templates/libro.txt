@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Flight
+{% endblock %}
+
+{% block body %}
+    <h1>Libro Detalle</h1>
+
+    <ul>
+        <li>Isbn: {{ libro.isbn }}</li>
+        <li>Titulo: {{ libro.titulo }}</li>
+        <li>Autor: {{ libro.autor}}</li>
+        <li>Año: {{libro.año}}</li>
+    </ul>
+
+{% endblock %}

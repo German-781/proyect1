@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    Página de Login
+{% endblock %}
+
+{% block body %}
+
+    <p> Ingrese su código de usuario y una password numérica</p>
+    <P>  (si no los tiene será creado) </P>
+    <br></br>
+    <form action="{{ url_for('login') }}" method= "POST">
+        <label>Nombre  --- </label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre"> <br></br>   
+        <label>password -</label>
+        <input type="password" name="passw" placeholder="Ingrese clave"> <br></br> 
+        <button>Submit</button>
+    </form>
+
+{% endblock %}

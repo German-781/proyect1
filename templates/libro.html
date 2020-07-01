@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Libro
+{% endblock %}
+
+{% block body %}
+    <h1>Detalle del libro</h1>
+
+    <ul>
+        <li>Isbn: {{ libro.isbn }}</li>
+        <li>Titulo: {{ libro.titulo }}</li>
+        <li>Autor: {{ libro.autor}}</li>
+        <li>Año: {{libro.año}}</li>
+        <br></br>
+        <li>Nota:{{comentario.nota}}</li>
+        <li>Comentario:{{comentario.coment}}</li>
+    </ul>
+
+    <form action="{{ url_for('califica') }}" method="POST">
+        <div class="form-group">    
+
+        <h1> Califique este libro</h1>
+        <label>Nota  --- </label>
+        <input type="text" name="nota" placeholder="Califique el libro de 1 a 5"> <br></br>   
+        <label>Comentario -</label>
+        <input type="text" name="coment" placeholder="Ingrese sus comentarios"> <br></br> 
+    
+        <button>Submit</button>
+        
+    </form>
+
+
+{% endblock %}

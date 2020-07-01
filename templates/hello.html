@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    Buenos días
+{% endblock %}
+
+{% block body %}
+    {{nombre}}
+<br>
+    {{passw}}
+
+    <form action="{{ url_for('lector') }}" method="POST">
+        <div class="form-group">    
+
+        <h1> Ingrese su forma de busqueda</h1>
+        <label>Codigo  --- </label>
+        <input type="text" name="codigo" placeholder="Ingrese codigo"> <br></br>   
+        <label>Titulo -</label>
+        <input type="text" name="titulo" placeholder="Ingrese titulo"> <br></br> 
+        <label>Autor -</label>
+        <input type="text" name="autor" placeholder="Ingrese autor"> <br></br> 
+    
+        <button>Submit</button>
+        
+    </form>
+
+
+<a href="http://http://127.0.0.1:5000/lector"></a>    
+{% endblock %}
